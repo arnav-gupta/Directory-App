@@ -1,0 +1,31 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Directory Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body ng-app="DirectoryApp" ng-controller="MainController">
+    <nav class="navbar navbar-fixed-top">
+        <ul class="nav nav-pills" style="background-color: #5a5c51;">
+            <li ng-class="{ active: isActive('/')}"><a id="home" href="#/">Home</a></li>
+            <li ng-class="{ active: isActive('/directory')}"><a id="directory" href="#/directory">Directory</a></li>
+        </ul>
+    </nav>
+    <br />
+    <br />
+    <div ng-view class="view-frame"> </div>
+    <footer class="footer" style="margin:auto;">
+     
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/controller/mainCtrl.js"></script>
+    <script src="script/controller/homeCtrl.js"></script>
+    <script src="script/controller/directoryCtrl.js"></script>
+</body>
+</html>
